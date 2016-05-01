@@ -111,6 +111,7 @@ public class SwingWorkerGetWaitDialog extends JDialog {
                         && event.getSource() == optionPane
                         && (event.getPropertyName().equals(VALUE_PROPERTY)
                                 || event.getPropertyName().equals(INPUT_VALUE_PROPERTY))) {
+                    SwingWorkerGetWaitDialog.this.canceled = true;
                     SwingWorkerGetWaitDialog.this.setVisible(false);
                     SwingWorkerGetWaitDialog.this.dispose();
                 }
